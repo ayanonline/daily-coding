@@ -1,4 +1,4 @@
-package sorting;
+package Day1;
 
 /**
  * Bubble
