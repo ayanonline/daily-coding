@@ -1,13 +1,7 @@
-/**
- * Pair
- */
 class Pair {
     int min, max;
 }
 
-/**
- * MaxMin
- */
 public class MaxMin {
     public static Pair getMinMax(int arr[]) {
         Pair minMax = new Pair();
@@ -34,7 +28,6 @@ public class MaxMin {
                 minMax.min = arr[i];
             }
         }
-
         return minMax;
     }
 
@@ -43,5 +36,4 @@ public class MaxMin {
         Pair minMax = getMinMax(array);
         System.out.println("Min= " + minMax.min + "\nMax= " + minMax.max);
     }
-
 }
