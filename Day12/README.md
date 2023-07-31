@@ -5,7 +5,8 @@
 1. Step1: Initialize values of min max by first two elements of the array respectively.
 2. Step2: Starting from 3rd compare each elements with min and max then change the value accordingly.
 
-````class Pair {
+```
+class Pair {
     int min, max;
 }
 
@@ -43,5 +44,5 @@ public class MaxMin {
         Pair minMax = getMinMax(array);
         System.out.println("Min= " + minMax.min + "\nMax= " + minMax.max);
     }
-}```
-````
+}
+```
