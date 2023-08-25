@@ -13,15 +13,22 @@ public class SeperateDigit {
         return rev;
     }
 
+    public static int lengthOfInteger(int num) {
+        int length = 0;
+        // calculate number length
+        while (num > 0) {
+            int co = num / 10;
+            num = co;
+            length++;
+        }
+        return length;
+    }
+
     public static int[] seperateDigit(int arr[]) {
         int length = 0;
         // calculate array length
         for (int num : arr) {
-            while (num > 0) {
-                int co = num / 10;
-                num = co;
-                length++;
-            }
+            length += lengthOfInteger(num);
         }
 
         int result[] = new int[length];
@@ -36,15 +43,15 @@ public class SeperateDigit {
                 index++;
             }
         }
-
         return result;
     }
 
     public static void main(String[] args) {
-        int arr[] = { 174, 25 };
+        int arr[] = { 174, 257, 23 };
         int result[] = seperateDigit(arr);
         for (int i : result) {
             System.out.println(i);
         }
+
     }
 }
